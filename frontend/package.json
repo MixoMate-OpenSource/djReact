@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "version": "0.0.1",
+  "description": "freelancing app",
+  "main": "./src/index.js",
+  "author": "rehan, chandrabhan",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.1",
+    "react-script": "^2.0.5",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack --mode production ./src/index.js --output-path ../static/frontend",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "webpack --mode development --watch ./src/index.js --output-path ../static/frontend"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.3.1"
+  }
+}

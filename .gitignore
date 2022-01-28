@@ -1,0 +1,6 @@
+**/media
+**/node_modules/
+*.sqlite3
+**/env
+**/venv
+*.pyc
