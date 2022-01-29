@@ -31,16 +31,15 @@ yarn start
 your application must be running at http://localhost:3000/
 
 ### 2. yarn dev with python manage.py runserver
-this command will watch the changes and build react-frontend for develpoment with the help of webpack, as you make changes in your frontend code. The build is directly served by django seamlessly, without putting any extra effort.
+this command will watch the changes and builds react-frontend during develpoment, with the help of webpack. The build is directly served by django seamlessly, without putting any extra effort.
 
 ```
 cd frontend
 yarn dev
 ```
-and in another terminal
+and in another terminal in your project root directory\
 ***Note:*** if you are running it first time you may want to run ```python manage.py collectstatic``` command
 ```
-cd ..
 python manage.py runserver
 ```
 
