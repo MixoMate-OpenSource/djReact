@@ -9,7 +9,7 @@ The frontend folder is actually a django app that is configured to serve react f
 
 ### 1. pip install
 #### Note: Don't forget to activate your virtual environment(if you are using any)
-install all the deoendencies for django project
+install all the dependencies for django project
 ```
 pip install -r requirements.txt
 ```
@@ -31,7 +31,7 @@ yarn start
 your application must be running at http://localhost:3000/
 
 ### 2. yarn dev with python manage.py runserver
-this command will watch the changes and builds react-frontend during develpoment, with the help of webpack. The build is directly served by django seamlessly, without putting any extra effort.
+this command watchs the changes and builds react-frontend during develpoment, with the help of webpack. The build is directly served by django seamlessly, without putting any extra effort.
 
 ```
 cd frontend
