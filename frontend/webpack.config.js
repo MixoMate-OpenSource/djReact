@@ -1,8 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
-
 module.exports = {
   entry: "./src/index.js",
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+},
   output: {
     path: path.resolve(__dirname, "./backend/static/frontend/"),
     filename: "[name].js",
@@ -16,15 +23,17 @@ module.exports = {
         use: "babel-loader",
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.less$/i,
         use: [
-          // Creates `style` nodes from JS strings
+          // compiles Less to CSS
           "style-loader",
-          // Translates CSS into CommonJS
           "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
+          "less-loader",
         ],
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
           test: /\.(jpe?g|png|gif|svg|json)$/i, 
@@ -41,7 +50,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       "process.env": {
-        NODE_ENV: JSON.stringify("development"),
+        NODE_ENV: JSON.stringify("production"),
       },
     }),
   ],
