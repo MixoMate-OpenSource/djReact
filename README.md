@@ -1,6 +1,6 @@
 # Django + React Starter Template
 Open-source Django Starter coded with react.
-
+![alt text](https://repository-images.githubusercontent.com/453027881/064dd82a-b2fa-45ef-aacf-3e2bc0badfb1)
 [![version](https://img.shields.io/github/package-json/v/GoCommix-OpenSource/Dj-react-starter-template?filename=frontend%2Fpackage.json)]()
 [![version](https://img.shields.io/github/pipenv/locked/dependency-version/GoCommix-OpenSource/Dj-react-starter-template/django)]()
 [![version](https://img.shields.io/github/pipenv/locked/python-version/GoCommix-OpenSource/Dj-react-starter-template)]()
