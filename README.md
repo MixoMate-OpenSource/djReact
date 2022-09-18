@@ -102,7 +102,7 @@ cd frontend
 yarn
 ```
 
-## Serving React app on Django
+## Serving React app on Django for Development
 
 It's very easy to serve your react app with django for this you just need to run react build on `watch` while your django app is running. For that follow the process below.
 
