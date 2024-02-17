@@ -1,6 +1,7 @@
 # myapp/management/commands/generate_template.py
 import os
 import shutil
+from sys import stdout
 from django.core.management.base import BaseCommand
 
 
@@ -10,7 +11,7 @@ class Command(BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument("project_name", type=str, help="Name of the Django project")
 
-    def handle(self, *args, **kwargs):
+    def handle( *args, **kwargs):
         project_name = kwargs["project_name"]
 
         # Create a new Django project
@@ -47,8 +48,7 @@ class Command(BaseCommand):
         # Navigate back to the project directory
         os.chdir("..")
 
-        self.stdout.write(
-            self.style.SUCCESS(
+        stdout.write(
+            
                 f"Successfully created Django project with React integration: {project_name}"
-            )
         )
