@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "djReact = djReact.management.commands.generate_template:Command.handle",
+            "djReact = djReact.management.commands.startproject:Command.handle",
         ],
     },
     classifiers=[
