@@ -1,0 +1,2 @@
+[console_scripts]
+djReact = djReact.management.commands.startproject:Command.handle

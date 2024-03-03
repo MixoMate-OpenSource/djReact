@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+djReact/__init__.py
+djReact.egg-info/PKG-INFO
+djReact.egg-info/SOURCES.txt
+djReact.egg-info/dependency_links.txt
+djReact.egg-info/entry_points.txt
+djReact.egg-info/requires.txt
+djReact.egg-info/top_level.txt
+djReact/management/__init__.py
+djReact/management/commands/__init__.py
+djReact/management/commands/startproject.py
+djReact/management/commands/build_dir/__init__.py
+djReact/management/commands/build_dir/djReactSettings.py
+djReact/management/commands/build_dir/file_content.py
