@@ -12,6 +12,8 @@
 You can install **djReact** directly from its GitHub repository using pip:
 
 ```bash
+pip install djReact
+# or direct from github
 pip install git+https://github.com/MixoMate-OpenSource/djReact
 ```
 ## Usage
