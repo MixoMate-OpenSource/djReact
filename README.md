@@ -1,10 +1,11 @@
-# djReact
-
 ![GitHub](https://img.shields.io/github/license/MixoMate-OpenSource/djReact)
 <!-- ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MixoMate-OpenSource/djReact) -->
 ![Django Version](https://img.shields.io/badge/Django-%5E4.0.0-blue)
 ![React Version](https://img.shields.io/badge/React-%5E17.0.2-blue)
 
+# djReact
+
+![alt text](https://repository-images.githubusercontent.com/453027881/064dd82a-b2fa-45ef-aacf-3e2bc0badfb1)
 **djReact** is a tool for quickly creating Django projects with integrated React frontend.
 
 ## Installation
