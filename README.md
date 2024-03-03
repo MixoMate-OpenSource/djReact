@@ -121,3 +121,7 @@ now go to http://localhost:8000 to see you django+React app running.
 
 
 For full documentation go to [comming soon]()
+
+
+pip install git+https://github.com/MixoMate-OpenSource/djReact
+djReact mywebsite
