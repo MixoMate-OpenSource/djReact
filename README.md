@@ -1,127 +1,42 @@
-# Django + React Starter Template
-Open-source Django Starter coded with react.
-![alt text](https://repository-images.githubusercontent.com/453027881/064dd82a-b2fa-45ef-aacf-3e2bc0badfb1)
-[![version](https://img.shields.io/github/package-json/v/GoCommix-OpenSource/Dj-react-starter-template?filename=frontend%2Fpackage.json)]()
-[![version](https://img.shields.io/github/pipenv/locked/dependency-version/GoCommix-OpenSource/Dj-react-starter-template/django)]()
-[![version](https://img.shields.io/github/pipenv/locked/python-version/GoCommix-OpenSource/Dj-react-starter-template)]()
-[![version](https://img.shields.io/github/package-json/dependency-version/GoCommix-OpenSource/Dj-react-starter-template/react?filename=frontend%2Fpackage.json)]()
+# djReact
 
-Hi there !!, this repository will help you crete production level `django + react` project, by using a single command.
+![GitHub](https://img.shields.io/github/license/MixoMate-OpenSource/djReact)
+<!-- ![GitHub release (latest by date)](https://img.shields.io/github/v/release/MixoMate-OpenSource/djReact) -->
+![Django Version](https://img.shields.io/badge/Django-%5E4.0.0-blue)
+![React Version](https://img.shields.io/badge/React-%5E17.0.2-blue)
 
-## Using the template to create a new project
+**djReact** is a tool for quickly creating Django projects with integrated React frontend.
 
-make sure that django is already installed in your system as we need django-admin command to create a project using this template.
+## Installation
 
-
-First of all you need to run the command below:
+You can install **djReact** directly from its GitHub repository using pip:
 
 ```bash
-django-admin startproject --template https://github.com/GoCommix-OpenSource/Dj-react-starter-template/archive/refs/heads/feature/basic.zip hello_world D:\hello_world_project
-```
-> Note : I have used  `D:\hello_world_project` as parent folder of the project and `hello_world` as the project name but you can use any destination folder and project name as per your need.
-
-Now we have our `django+react` project generated using our `basic` template  at `D:\hello_world_project`
-
-```bash
-.\hello_world_project #project parent directory
-│
-├── hello_world\  # django main app
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── common_settings.py # default  setting file connected with .env file
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-│
-├── error_handler\
-│   │
-│   ├── migrations\
-│   │   └── __init__.py
-│   │
-│   ├── templates\
-│   │   └── error_page.html
-│   │
-│   ├── __init__.py
-│   ├── apps.py
-│   ├── tests.py
-│   └── views.py
-│
-├── frontend\  # react app lies in this folder
-│   │
-│   │
-│   ├── src\
-│   │   │
-│   │   ├── assets\
-│   │   │   └── react.svg
-│   │   │
-│   │   ├── pages\
-│   │   │   │
-│   │   │   └── home\
-│   │   │       └── index.jsx
-│   │   │
-│   │   │
-│   │   ├── App.css
-│   │   ├── App.tsx
-│   │   ├── constants.tsx
-│   │   ├── index.css
-│   │   ├── main.tsx
-│   │   └── vite-env.d.ts
-│   │
-│   ├── index.html
-│   ├── package.json
-│   ├── tsconfig.json
-│   ├── tsconfig.node.json
-│   ├── vite.config.ts
-│   ├── yarn-error.log
-│   └── yarn.lock
-│
-├── .env      # example .env file already in use, make sure to add this in your .gitignore to hide sensitive information.
-├── .gitignore
-├── Pipfile
-├── Pipfile.lock
-├── README.md
-└── manage.py
-```
-
-further you can use any feature branch to create different templates using the syntax below:
-
-
-```html
-django-admin startproject --template https://github.com/GoCommix-OpenSource/Dj-react-starter-template/archive/refs/heads/feature/<branch-name>.zip <app-name> <parent-folder>
-```
-
-## Install dependencies for django and react
-
-you may required pipenv and yarn/npm for this:
-```bash
-cd D:\hello_world_project
-pip install pipenv
-pipenv install
-
-cd frontend
-yarn
-```
-
-## Serving React app on Django for Development
-
-It's very easy to serve your react app with django for this you just need to run react build on `watch` while your django app is running. For that follow the process below.
-
-. Open a terminal to run django app
-```bash
-pipenv shell
-py manage.py runserver
-```
-
-. Open a terminal in `frontend` folder to run  react app using command:
-```bash
-yarn dev
-```
-
-now go to http://localhost:8000 to see you django+React app running.
-
-
-For full documentation go to [comming soon]()
-
-
 pip install git+https://github.com/MixoMate-OpenSource/djReact
+```
+## Usage
+After installing `djReact`, you can use the `djReact` command to create a new Django project with integrated React frontend. Simply run the following command:
+```bash
 djReact mywebsite
+```
+Replace `mywebsite` with the desired name for your Django project.
+
+## Features
+- Seamless integration of Django and React.
+- Automated setup of Django project structure.
+- Easy-to-use command-line interface.
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to djReact, please follow these guidelines:
+
+1. Fork the repository and create  your branch from main.
+2. Make your changes and ensure the code follows the project's coding style.
+3. Write tests to cover your changes.
+4. Open a pull request with a detailed description of your changes.
+
+## License
+This project is licensed under the [MIT License](http://asd.sd).
+
+
+In this example, I've added badges for Django and React versions using the `shields.io` service.
+
