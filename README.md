@@ -5,8 +5,7 @@
 
 # djReact
 
-![alt text](
-https://repository-images.githubusercontent.com/453027881/8a2caddb-c000-4d97-b28c-29e921)
+![alt text](https://repository-images.githubusercontent.com/453027881/8a2caddb-c000-4d97-b28c-29e921)
 **djReact** is a tool for quickly creating Django projects with integrated React frontend.
 
 ## Installation
