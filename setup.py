@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="djReact",
-    version="1.0",
+    version='{{VERSION_PLACEHOLDER}}',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
