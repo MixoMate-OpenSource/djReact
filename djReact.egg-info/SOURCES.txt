@@ -14,5 +14,4 @@ djReact/management/__init__.py
 djReact/management/commands/__init__.py
 djReact/management/commands/startproject.py
 djReact/management/commands/build_dir/__init__.py
-djReact/management/commands/build_dir/djReactSettings.py
 djReact/management/commands/build_dir/file_content.py
