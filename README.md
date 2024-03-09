@@ -5,6 +5,8 @@
 
 # djReact
 
+## Now with PWA out of the box
+
 ![alt text](https://repository-images.githubusercontent.com/453027881/8a2caddb-c000-4d97-b28c-29e921b79dc5)
 **djReact** is a tool for quickly creating Django projects with integrated React frontend.
 
