@@ -8,6 +8,8 @@ djReact.egg-info/dependency_links.txt
 djReact.egg-info/entry_points.txt
 djReact.egg-info/requires.txt
 djReact.egg-info/top_level.txt
+djReact/frontend/__init__.py
+djReact/frontend/frontend.zip
 djReact/management/__init__.py
 djReact/management/commands/__init__.py
 djReact/management/commands/startproject.py
