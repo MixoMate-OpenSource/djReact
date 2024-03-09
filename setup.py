@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="djReact",
-    version="2.1.1",
+    version="2.1.2",
     packages=find_packages(),
     include_package_data=True,
     install_requires=["Django>=3.0"],
@@ -24,3 +24,4 @@ setup(
     long_description=description,
     long_description_content_type="text/markdown",
 )
+
