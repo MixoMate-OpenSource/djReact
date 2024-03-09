@@ -64,7 +64,8 @@ if __name__ == '__main__':
 
 '''
 
-get_djReact_content = lambda project_name: f"""
+get_djReact_content = (
+    lambda project_name: f"""
 from .settings import *
 INSTALLED_APPS = ["whitenoise.runserver_nostatic", *INSTALLED_APPS]
 
@@ -72,11 +73,11 @@ ROOT_URLCONF = "{project_name}.urls"
 STATIC_URL = "assets/"
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
-STATIC_ROOT = BASE_DIR / "frontend/dist/assets"
+STATIC_ROOT = BASE_DIR / "frontend/dist"
 TEMPLATES = [
     {{
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [STATIC_ROOT/"..", BASE_DIR / "templates"],
+        "DIRS": [STATIC_ROOT, BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {{
             "context_processors": [
@@ -104,6 +105,7 @@ STATICFILES_STORAGE = "spa.storage.SPAStaticFilesStorage"
 # WSGI_APPLICATION = '{project_name}.wsgi.application'
 
 """
+)
 
 get_default_urls_content=lambda project_name:f'''
 """
